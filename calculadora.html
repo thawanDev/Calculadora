@@ -10,7 +10,6 @@
             margin: 0;        
             padding: 0;
         }
-
         .fundo{
             background-image: linear-gradient(45deg, rgb(16, 255, 235), rgb(0, 0, 105));
             height: 100vh;
@@ -26,7 +25,6 @@
             transform: translate(-50%, -50%);
             border-radius: 15px;
             padding: 18px;
-
         }
         .botao{
             width: 50px;
@@ -40,8 +38,7 @@
         }
         .botao:hover{
             background-color: rgb(56, 54, 54);
-        }
-        
+        } 
         #resultado{
             width: 214px;
             height: 30px;
@@ -51,7 +48,6 @@
             text-align: right;
             padding: 5px;
             background-color: white;
-
         }
     </style>
 </head>
@@ -91,12 +87,7 @@
                 <tr>
                     <td colspan="2"><button class="botao" onclick="insert('0')" style="width: 106px">0</button></td>
                     <td><button class="botao" style="color: aqua;" onclick="insert('.')">.</button></td>
-    
                 </tr>
-
-
-
-
             </table>
         </div>
     </div>
@@ -106,18 +97,15 @@
                var numero = document.getElementById('resultado').innerHTML;
                document.getElementById('resultado').innerHTML = numero + num;
             }
-
             function clean()
             {
                 document.getElementById('resultado').innerHTML = ""; 
             }
-
             function back()
             {
                 var resultado = document.getElementById('resultado').innerHTML;
                 document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
             }
-
             function calcular()
             {
                 var resultado = document.getElementById('resultado').innerHTML;
@@ -131,6 +119,5 @@
                 }
             }
         </script>
-
 </body>
 </html>
